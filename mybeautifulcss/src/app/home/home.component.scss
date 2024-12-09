@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.c1{
+  background-color: #3399ff;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title{
+      font-family: 'Oi';
+      font-weight: 500;
+      color: rgb(185, 183, 183);
+    }
+  }
+
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+
+  .small{
+    background-color: #FF7F3E;
+    width: 20em;
+    height: 20em;
+    left: -10em;
+    bottom: -10em;
+  }
+
+  .medium{
+    width: 40em;
+    height: 40em;
+    left: -20em;
+    bottom: -20em;
+  }
+
+  .large{
+    background-color: #80C4E9;
+    width: 60em;
+    height: 60em;
+    left: -30em;
+    bottom: -30em;
+  }
+
+  .xlarge{
+    background-color: #FFF6E9;
+    width: 80em;
+    height: 80em;
+    left: -40em;
+    bottom: -40em;
+  }
+
+  .xxlarge{
+    background-color: #604CC3;
+    width: 100em;
+    height: 100em;
+    left: -50em;
+    bottom: -50em;
+  }
+
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+
+  .shade3{
+    opacity: 0.7;
+  }
+
+  .shade4{
+    opacity: 0.8;
+  }
+
+  .shade5{
+    opacity: 0.9;
+  }
+
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+
+    50%{
+      transform: scale(1.2);
+    }
+
+    100%{
+      transform: scale(0.8);
+    }
+  }
+}
