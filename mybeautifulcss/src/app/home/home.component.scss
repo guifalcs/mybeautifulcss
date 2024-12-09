@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 .c1{
   background-color: #3399ff;
-  height: 100vh;
+  height: 61em;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,11 +12,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 50%;
 
     .title{
       font-family: 'Oi';
       font-weight: 500;
-      color: rgb(185, 183, 183);
+      color: rgb(255, 255, 255);
+      text-shadow:
+      2px 2px 0px #FF7F3E,
+      6px 6px 0px #80C4E9,
+      8px 8px 0px #604CC3,
+      10px 10px 0px #FF7F3E,
+      14px 14px 0px #851b0d,
+      8px 8px 0px #604CC3,
+      12px 12px 0px #FF7F3E;
+      -webkit-text-stroke: 0.2px black;
+
+    }
+
+    .subtitle{
+      font-family: 'Nunito';
+      margin-top: 2em;
     }
   }
 
@@ -29,41 +46,41 @@
 
   .small{
     background-color: #FF7F3E;
-    width: 20em;
-    height: 20em;
+    width: 10em;
+    height: 10em;
+    left: -5em;
+    bottom: -5em;
+  }
+
+  .medium{
+    width: 30em;
+    height: 30em;
     left: -10em;
     bottom: -10em;
   }
 
-  .medium{
-    width: 40em;
-    height: 40em;
+  .large{
+    background-color: #80C4E9;
+    width: 50em;
+    height: 50em;
     left: -20em;
     bottom: -20em;
   }
 
-  .large{
-    background-color: #80C4E9;
-    width: 60em;
-    height: 60em;
+  .xlarge{
+    background-color: #FFF6E9;
+    width: 70em;
+    height: 70em;
     left: -30em;
     bottom: -30em;
   }
 
-  .xlarge{
-    background-color: #FFF6E9;
-    width: 80em;
-    height: 80em;
-    left: -40em;
-    bottom: -40em;
-  }
-
   .xxlarge{
     background-color: #604CC3;
-    width: 100em;
-    height: 100em;
-    left: -50em;
-    bottom: -50em;
+    width: 90em;
+    height: 90em;
+    left: -40em;
+    bottom: -40em;
   }
 
   .shade1{
