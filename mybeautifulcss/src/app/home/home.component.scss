@@ -331,7 +331,7 @@
     .textContainer{
       background-color: white;
       margin-top: 2.5em;
-      padding: 1.5em;
+      padding: 2em;
       border-radius: 2em;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       line-height: 1.5;
@@ -364,5 +364,21 @@
     text-shadow: 2px 2px 3px #3d5b88;
     animation: float 6s ease-in-out infinite, gradient 8s linear infinite;
     margin-top: 1em;
+  }
+
+  .step{
+    padding: 2em;
+    font-family: 'Anton';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+
+    img{
+      margin-top: 3em;
+      width: 9em;
+      transform: rotate(90deg);
+    }
   }
 }
