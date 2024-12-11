@@ -222,6 +222,7 @@
   align-items: center;
   flex-direction: column;
   padding: 3em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   .title{
     color: white;
@@ -257,4 +258,18 @@
       }
     }
   }
+}
+
+//Container 3
+.c3{
+  height: 100vh;
+  background: radial-gradient(circle at bottom left,transparent 25%,#604CC3 25.5%,
+   #3399ff 36%, transparent 37%, transparent 100%),
+  radial-gradient(circle at top right,transparent 34%,#604CC3 34.5%,
+   #3399ff 45.5%, transparent 46%, transparent 100%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 0.75;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
 }
