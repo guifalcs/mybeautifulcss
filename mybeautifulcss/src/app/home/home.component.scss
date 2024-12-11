@@ -227,7 +227,7 @@
   .title{
     color: white;
     text-shadow: 2px 2px 6px #3399ff;
-    -webkit-text-stroke: 0.8px black;
+    -webkit-text-stroke: 0.3px black;
     margin-top: 1em;
     animation: float 6s ease-in-out infinite, gradient 8s linear infinite;
   }
@@ -243,7 +243,7 @@
 
       .subtitle{
         color: white;
-        -webkit-text-stroke: 0.4px black;
+        -webkit-text-stroke: 0.2px black;
         text-shadow: 2px 2px 2px #3399ff;
         font-weight: 700;
         font-family: 'Anton';
