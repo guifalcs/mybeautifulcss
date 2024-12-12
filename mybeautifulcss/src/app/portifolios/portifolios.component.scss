@@ -1,5 +1,115 @@
-.portifoliosContainer{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.portfoliosContainer{
   height: 100vh;
-  background-color: rgb(217, 235, 252);
+  background-color: #5493e9;
   padding: 4em;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1{
+    font-family: "Oi";
+    -webkit-text-stroke: 0.8px black;
+    text-shadow: 2px 2px 8px #15171a;
+    font-size: 4em;
+  }
+
+  p{
+    color: black;
+    font-family: "Lexend";
+  }
+
+  img{
+    width: 30em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .subtitle{
+    margin-top: 1em;
+    font-family: "Lexend";
+    color: black;
+    font-style: italic;
+  }
+
+  .portfolios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5em;
+
+    .portfolio{
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      gap: 1.5em;
+      background-color: #a7ddfa;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+      .userDescription{
+        padding: 2.8em;
+
+        .access{
+          transition: 2s;
+          appearance: button;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          color: #FFFFFF;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 1em;
+          font-weight: 900;
+          letter-spacing: .8px;
+          line-height: 20px;
+          margin-top: 3em;
+          outline: none;
+          padding: 13px 16px;
+          text-align: center;
+          touch-action: manipulation;
+          transform: translateZ(0);
+          transition: filter .2s;
+          user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          width: 15em;
+          background-color: #FF7F3E;
+
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+          }
+
+          &:after {
+            background-clip: padding-box;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            bottom: -4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+          }
+        }
+
+        .username{
+          font-size: 2em;
+          text-shadow: 2px 2px 4px #15171a;
+        }
+
+        .usertext{
+          margin-top: 2em;
+        }
+      }
+    }
+  }
 }
